@@ -1,23 +1,21 @@
-import React, { useState, useEffect } from 'react';
-
 function Home() {
-  const [completed, setCompleted] = useState(false);
-  const [tarefa, setTarefa] = useState('');
-
-  useEffect(() => {
-    if (completed) {
-      setTarefa('Parabéns! Você concluiu a tarefa!');
-    }
-  }, [completed]);
-
-  return (
-    <div>
-      <h1>Tarefa</h1>
-      <h3>{tarefa}</h3>
-      <p>Conclua a tarefa</p>
-      <button onClick={() => setCompleted(true)}>Concluir Tarefa</button>
-    </div>
-  );
-}
-
-export default Home;
+    return (
+      <div className="
+       border-4 border-[#dc143c]
+       m-8 p-8
+       flex items-center justify-center">
+  
+          <div className="w-[250px]">
+              <h1>Teresa Mendonça</h1>
+              <p>Narco mexicana más poderosa de España</p>
+          </div>
+  
+          <div className="w-[250px]">
+              <img src="https://www.diariodepernambuco.com.br/static/app/noticia_127983242361/2015/08/18/592949/20150818090107838935i.jpg"
+              alt="Tereza Mendonça"/>
+          </div>
+      </div>
+    )
+  }
+  
+  export default Home

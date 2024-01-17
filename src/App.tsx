@@ -1,14 +1,12 @@
-import Home from './pages/home/Home';
-import './App.css';
-import React from 'react';
+import Grid from './components/Grid/Grid';
 
 function App() {
- 
   return (
-    <>
-      <Home/>
-    </>
+   <Grid />
   );
 }
 
 export default App;
+
+
+
