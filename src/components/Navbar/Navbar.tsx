@@ -3,11 +3,13 @@ import { Link, useNavigate } from "react-router-dom"
 import { AuthContext } from "../../contexts/AuthContext"
 
 function Navbar() {
-  
+    // Criamos uma constante que recebe o hook useNavigate, para podermos redirecionar o usuário
     const navigate = useNavigate()
 
+    // Pega as informações que queremos do nosso Contexto através do hook useContexo
     const { handleLogout } = useContext(AuthContext)
 
+    // Função que vai ser chamada ao clique da opção SAIR, que por sua vez, chama a função handleLogout do Contexto
     function logout() {
         handleLogout()
         alert('Usuário deslogado com sucesso')
