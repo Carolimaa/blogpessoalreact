@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Tema from '../../../models/Tema'
 
+
 interface CardTemaProps {
     tema: Tema  
 }
@@ -13,7 +14,7 @@ function CardTemas({ tema }: CardTemaProps) {
             </header>
 
             <p className='p-8 text-3xl bg-slate-200 h-full'>
-                {tema.descricao}    { }
+                {tema.descricao}    {}
             </p>
 
             <div className="flex">
